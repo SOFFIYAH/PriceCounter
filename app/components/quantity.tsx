@@ -29,6 +29,7 @@ export default function Quanty({ value }: Tl) {
   return (
     <>
       <form className="flex gap-2">
+        {/* first input PRICE */}
         <label htmlFor="p">Price:</label>
         <input
           type="text"
@@ -38,7 +39,7 @@ export default function Quanty({ value }: Tl) {
           onChange={(e) => Cchnge2(e)}
           className="border-solid border-2"
         />
-
+        {/* sSECOND INPUT QUANTITY */}
         <label htmlFor="q">Quantity</label>
         <span>{quant}</span>
         <input
@@ -51,6 +52,7 @@ export default function Quanty({ value }: Tl) {
           onChange={(e) => Cchnge(e)}
         />
       </form>
+      {/* FOR THE TOTAL PRICE */}
       <div className="flex gap-2 mt-4 ml-24">
         <button
           onClick={Gen}
